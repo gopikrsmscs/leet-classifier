@@ -1,6 +1,7 @@
 # Leet-Classifier
 
-**Leet-Classifier** is an open-source Python project designed to automate the process of classifying and organizing your LeetCode submissions. It extracts tags and difficulty information from your code and stores your submissions in well-structured directories. This project aims to assist you in effectively managing your LeetCode solutions, making it easier to find and review your code.
+
+**Leet-Classifier** is a Python-based open-source tool designed to streamline the process of classifying and organizing your LeetCode submissions. It extracts essential metadata from comments, such as tags (in the format of lct:tag1,tag2;) and difficulty tags (lct:E1;), from your most recent LeetCode submissions. With this information, Leet-Classifier intelligently classifies your submissions into well-structured folders on your local system. This will help you review the solved problems for interviews and identify patterns.
 
 ## Prerequisites
 
