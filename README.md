@@ -9,7 +9,7 @@ Before you get started with **Leet-Classifier**, ensure you have the following p
 
 - Python 3.x installed on your system.
 
-## Installation
+## Get Started
 
 You can clone the repository to your local machine and set up the project using the following commands:
 
@@ -23,8 +23,7 @@ git clone https://github.com/gopikrsmscs/leet-classifier.git
 ```bash
 cd leet-classifier
 ```
-## Configuration
-To use leet-classifier, you need to configure it with your LeetCode cookie. Here's how you can do it:
+3. To use leet-classifier, you need to configure it with your LeetCode cookie. Here's how you can do it:
 Inside cookie.json, add your LeetCode cookie as follows:
 ```json
 {
@@ -34,7 +33,30 @@ Inside cookie.json, add your LeetCode cookie as follows:
 Ensure that you replace "your_leetcode_cookie_here" with your actual LeetCode cookie. You can obtain your LeetCode cookie by inspecting your browser's developer tools while logged in to LeetCode.
 
 ## Usage
-Once you've configured the tool with your LeetCode cookie, you can run the script to fetch, classify, and store your recent LeetCode submissions.
+To make use of the Leet-Classifier, add tags anywhere in the code as comments before making submissions to LeetCode. Below are examples of supported tags:
+
+### Supported Tags
+- **Problem Tag (lct)**: Write in comments anywhere in the code, starting with lct and ending with a semicolon (;).
+    ``` bash
+    lct:tag1,tag2; 
+    lct:tag1;
+    ```
+- **Difficulty Tag (lcd)**: Write in comments anywhere in the code, starting with lcd and ending with a semicolon (;). The lcd field is not mandatory. 
+    ``` bash
+    lcd:e1; 
+    lcd:e2; 
+    lcd:m1; 
+    lcd:h1;
+    ```
+### Example Usesage
+![Alt text for image 1](assets/python_example.png "Python Example")
+
+![Alt text for image 2](assets/java_example.png "Java Example")
+
+![Alt text for image 3](assets/cpp_example.png "C++ Example")
+
+![Alt text for image 4](assets/mysql_example.png "Mysql Example")
+### Run the script
 
 ```bash
 python leet_classifier.py
