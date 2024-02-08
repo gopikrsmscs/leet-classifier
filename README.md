@@ -3,6 +3,9 @@
 
 **Leet-Classifier** is a Python-based open-source tool designed to streamline the process of classifying and organizing your LeetCode submissions. It extracts essential metadata from comments, such as tags (in the format of lct:tag1,tag2;) and difficulty tags (lct:E1;), from your most recent LeetCode submissions. With this information, Leet-Classifier intelligently classifies your submissions into well-structured folders on your local system. This will help you review the solved problems for interviews and identify patterns.
 
+[![Watch the video](assets/thumbnail.png)](https://www.youtube.com/watch?v=PVE1WS58slA "How to Use Leet Classifier || Leetcode || Interview")
+
+
 ## Prerequisites
 
 Before you get started with **Leet-Classifier**, ensure you have the following prerequisites:
@@ -48,19 +51,37 @@ To make use of the Leet-Classifier, add tags anywhere in the code as comments be
     lcd:m1; 
     lcd:h1;
     ```
-### Example Usesage
+### Example Usage
 ![Alt text for image 1](assets/python_example.png "Python Example")
-
-![Alt text for image 2](assets/java_example.png "Java Example")
 
 ![Alt text for image 3](assets/cpp_example.png "C++ Example")
 
 ![Alt text for image 4](assets/mysql_example.png "Mysql Example")
-### Run the script
+### Running the Script
+The script accepts an optional argument, limit, which specifies the number of recent submissions to fetch. If limit is not provided, the script defaults to processing only the most recent submission.
 
+To run the script without specifying a limit (defaults to 1):
 ```bash
-python leet_classifier.py
+    python3 leet_classifier.py
 ```
+
+
+To run the script with a specified limit (e.g., 10):
+```bash
+python3 leet_classifier.py 10
+```
+
+This command fetches the last 1 or 10 submissions from LeetCode, filtering them based on their acceptance status. It then organizes the accepted submissions into logically named directories as illustrated below:
+
+![Alt text for image 1](assets/results.png "Output Example")
+
+### Supported Languages
+
+As of now, the repository supports the following programming languages:
+```bash
+Java, Python, JavaScript, C++, C, C#, MySQL
+```
+We plan to extend support to additional languages in the near future.
 
 ## Contributing
 We welcome contributions to make this project even better. If you have suggestions, bug reports, or feature requests, please follow these steps:
